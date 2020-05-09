@@ -79,7 +79,9 @@
 
                             <p>参加者一覧</p>
                             @foreach($event->participates as $participate)
-                            <img src="{{ $participate->user->image }}" class="profilepic" alt="">
+                            <a href="{{ route('users.show', $participate->user->id) }}" class="profilepic">
+                                <img src="{{ $participate->user->image }}" class="profilepic" alt="">
+                            </a>
                             @endforeach
                         </div>
                     </div>
@@ -99,7 +101,7 @@
               
                             <p class="card-text"><small class="text-muted">{{ $comment->created_at }}</small></p>
                             投稿者:
-                            <a href="{{ route('users.show', $comment->user->id) }}">
+                            <a href="{{ route('users.show', $participate->user->id) }}">
                                 {{ $comment->user->name }}
                             </a>
                             

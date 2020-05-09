@@ -10,11 +10,13 @@
                 <div class="row">
                     <div class="col-6 text-right mt-5">
                         <img src="{{ $user->image }}" class="icon" alt="">
+                        <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-right">
                                 <input type="file" class="form-control-file text-right" id="exampleFormControlFile1" name="image">
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div class="col-md-6 text-left font-weight-bold">
                         <h3 class="registerinfo text-center mb-3"><span>プロフィール</span></h3>
@@ -33,7 +35,13 @@
                                 name="introduction">{{ $user->introduction }}</textarea>
                         <hr>
                     </div>
-                <input type="submit" value="プロフィールを変更する" class="btn btn-bkk">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <input type="submit" value="プロフィールを変更する" class="btn btn-bkk">
+                            </div>
+                        </div>
+                    </div>
                 {{-- <a href="{{ route('users.update', $user) }}" type="submit" class="btn btn-bkk">プロフィールを変更する</a> --}}
 
     </form>

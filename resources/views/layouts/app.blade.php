@@ -76,7 +76,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 {{-- <a href="{{ route('events.create') }}" class="dropdown-item">投稿する</a> --}}
-                                <a href="{{ route('users.index', Auth::user()->id) }}" class="dropdown-item">プロフィール</a>
+                                <a href="{{ route('users.show', Auth::user()->id) }}" class="dropdown-item">プロフィール</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}

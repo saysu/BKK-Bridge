@@ -60,7 +60,7 @@
     <a class="nav-link active" href="{{ route('events.create') }}">イベントを作る</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('users.show', Auth::id()) }}">マイページ</a>
+        <a class="nav-link" href="{{ route('users.index', Auth::id()) }}">マイページ</a>
     </li>
   </ul>
 
@@ -108,9 +108,6 @@
                         @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                         @endforeach
-
-
-
                     </select>
                 </div>
 
@@ -145,7 +142,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary">イベントを作成する</button>
+                            <input type="submit" class="btn btn-primary" value="イベントを作成する">
+                            {{-- <button type="submit" class="btn btn-primary">イベントを作成する</button> --}}
                         </div>
                     </div>
                 </div>

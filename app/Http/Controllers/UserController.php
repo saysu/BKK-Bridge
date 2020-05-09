@@ -18,7 +18,9 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        return view('users.index', ['user' => $user]);
+        $user->load('events', 'participates.event', 'keeps.event');
+      return view('users.index', ['user' => $user]);
+      
 
 
     }
@@ -58,9 +60,7 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::find($id);
-        $user->load('events', 'participates.event', 'keeps.event');
-      return view('users.show', ['user' => $user]);
-
+        return view('users.show', ['user' => $user]);
     }
 
     /**

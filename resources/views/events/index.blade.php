@@ -59,7 +59,7 @@
                 <a class="nav-link" href="{{ route('events.create') }}">イベントを作る</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('users.show', Auth::id()) }}">マイページ</a>
+                <a class="nav-link" href="{{ route('users.index', Auth::id()) }}">マイページ</a>
             </li>
         </ul>
 

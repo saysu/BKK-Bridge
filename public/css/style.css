@@ -163,7 +163,7 @@ body {
       transform: translate(-50%,-50%);
       margin:0;
       padding:0;
-      height: 40px;
+      height: 30px;
       width: 200px;
       }
 
@@ -182,7 +182,7 @@ body {
       transform: translate(-50%,-50%);
       margin:0;
       padding:0;
-      height: 40px;
+      height: 30px;
       width: 200px;
       }
 
@@ -196,7 +196,7 @@ body {
         /* margin-left: 50;
         padding:0; */
         text-align: center;
-        height: 70px;
+        height: 45px;
         width: 400px;
         }
 
@@ -385,4 +385,8 @@ body {
 
        .editinput {
          font-size: 20px;
+       }
+
+       .topside span {
+        background: linear-gradient(transparent 70%, #FFB6C1 70%);
        }

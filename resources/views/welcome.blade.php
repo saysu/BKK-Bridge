@@ -68,7 +68,7 @@
                             <img src="{{ Auth::user()->image}}" class="profilepic" alt=""><span class="caret"></span>
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a href="{{ route('events.create') }}" class="dropdown-item">投稿する</a>
                             <a href="{{ route('users.edit', Auth::user()->id) }}" class="dropdown-item">My page編集</a>
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -79,7 +79,7 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-                        </div>
+                        </div> --}}
                     </li>
                     @endguest
                 </ul>
@@ -95,8 +95,10 @@
         <p class="text-center lead">タイで新たな友達、趣味を作りたいけど方法が分からない<br>
             そんなあなたにぴったりのコミュニティサイトです!
         </p>
-        <button type="button" class="btn1 btn btn-outline-light btn-lg">新規登録する</button>
-        <button type="button" class="btn2 btn btn-outline-light btn-lg">ログインする</button>
+        @guest
+        <a class="btn1 btn btn-outline-light btn-lg" href="{{ route('login') }}">ログインする</a>
+        <a class="btn2 btn btn-outline-light btn-lg" href="{{ route('register') }}">新規登録する</a>
+        @endguest
     </div>
 
 
@@ -122,10 +124,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-5">
-                    <h2>What kind of events we could join?</h2>
-                    <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your
-                        ideas or build your entire app with our Sass variables and mixins, responsive grid system,
-                        extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                    <h2 class="topside mt-3 font-weight-bold text-center"><span>こんなイベントに参加可能！<span></h2>
+                    <ul class="mt-5">
+                      <li>ビジネス交流会 / ネットワーキングイベント</li>
+                      <li>共通の趣味同士で飲み会、お茶会</li>
+                      <li>女子会、男子会</li>
+                      <li>一緒に運動！ランニング、サッカー、バトミントンなど</li>
+                      <li>ボランティア、慈善活動</li>
+                      <li>スポーツ観戦</li>
+                      <li>タイ語勉強会</li>
+                      <li>英語勉強会</li>
+                      <li>もくもく会</li>
+                      <li>料理教室などなど</li>
+                    </ul>
                 </div>
                 <div class="col-md-6">
                     <img src="/image/party.jpg" class="w-100" alt="">
@@ -146,10 +157,12 @@
                 </div>
 
                 <div class="col-md-6 mb-5">
-                    <h2>How to make events?</h2>
-                    <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your
-                        ideas or build your entire app with our Sass variables and mixins, responsive grid system,
-                        extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                    <h2 class="topside mt-3 font-weight-bold text-center"><span>イベントを企画してみよう！</span></h2>
+                    <p class="mt-5">オーガナイザーとしていつでもイベント企画が可能！</p>
+                    <p>飲み会、ビジネス交流会、趣味、スポーツ..など<br>
+                      タイに在住の皆さまと交流の場を自ら企画が出来ます。<br>
+                      まずは新規登録し、マイページを作成してください。<br>
+                    その後、「イベントを作る」のリンクより自由に作成してください!</p>
                 </div>
             </div>
         </div>
@@ -161,7 +174,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <button type="button" class="btnfooter btn btn-primary btn-lg text-center">Let's start!!</button>
+                  
+      <a href="{{ route('events.index') }}" class="btnfooter btn btn-primary btn-lg">Let's start!!</a>
+
                 </div>
             </div>
         </div>

@@ -101,7 +101,7 @@
               
                             <p class="card-text"><small class="text-muted">{{ $comment->created_at }}</small></p>
                             投稿者:
-                            <a href="{{ route('users.show', $participate->user->id) }}">
+                            <a href="{{ route('users.show', $comment->user->id) }}">
                                 {{ $comment->user->name }}
                             </a>
                             

@@ -31,7 +31,7 @@ class EventController extends Controller
     {   
         $keyword = $request->input('keyword');
         if(!empty($keyword)){
-            $events = Event::orderBy('date','asc')->where('date','>',Carbon::today())->where('title', 'like', '%'.$keyword.'%')->orWhere('content','like', '%'.$keyword.'%')->orWhere('place','like', '%'.$keyword.'%')->paginate(5);
+            $events = Event::orderBy('date','asc')->where('date','>',Carbon::yesterday())->where('title', 'like', '%'.$keyword.'%')->orWhere('content','like', '%'.$keyword.'%')->orWhere('place','like', '%'.$keyword.'%')->paginate(5);
             return view('events.index', [
                 'events' => $events,
             ]);
@@ -44,7 +44,7 @@ class EventController extends Controller
             $events = Event::orderBy('date','asc')->whereDate('date', $date)->paginate(5);
             $events->load('category', 'user');
         } else {
-            $events = Event::orderBy('date','asc')->where('date','>',Carbon::today())->paginate(5);
+            $events = Event::orderBy('date','asc')->where('date','>',Carbon::yesterday())->paginate(5);
         }
 
             return view('events.index', [

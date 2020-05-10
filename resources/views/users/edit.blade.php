@@ -8,22 +8,24 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="row">
-                    <div class="col-6 text-right mt-5">
+                    <div class="col-5 text-right mt-5">
                         <img src="{{ $user->image }}" class="icon" alt="">
                         <div class="container">
                         <div class="row">
-                            <div class="col-md-12 text-right">
-                                <p>画像投稿は必須です</p>
-                                <label for="file_upload">
-                                    ファイルを選択して下さい
-                                    <input type="file" id="file_upload" name="image">
+                            <div class="col-md-12 text-right mt-2 pr-4">
+                                <label for="file_upload" class="labeluser">画像投稿は必須です!
+                                    <input type="file" id="file" onchange="$('#fake_text_box').val($(this).val())" name="image">
+                                    <input type="text" id="file_upload" value="ファイル選択" onClick="$('#file').click();">
                                     </label>
+                                    <div>
+                                        <input type="text" id="fake_text_box" value="" size="20" readonly onClick="$('#file').click();">
+                                        </div>
                             </div>
 
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-6 text-left font-weight-bold">
+                    <div class="col-md-7 text-left font-weight-bold">
                         <h3 class="registerinfo text-center mb-3"><span>プロフィール</span></h3>
                         <input type="text" value="{{ $user->name }}" name="name">
                         <hr>

@@ -71,7 +71,11 @@
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        <img src="{{ Auth::user()->image}}" class="profilepic" alt=""><span class="caret"></span>
+                                @if(isset(Auth::user()->image))
+                        <img src="{{ Auth::user()->image}}" class="profilepic" alt="">
+                        @else 
+                        <img src="https://res.cloudinary.com/diyf3mdjl/image/upload/v1589084086/%E4%BA%BA%E7%89%A9%E3%81%AE%E7%84%A1%E6%96%99%E7%B4%A0%E6%9D%90_dyuul4.png" class="profilepic" alt="">
+                        @endif
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

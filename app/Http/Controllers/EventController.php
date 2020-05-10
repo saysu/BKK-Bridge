@@ -29,6 +29,9 @@ class EventController extends Controller
  
     public function index(Request $request)
     {   
+        if(empty(Auth::user()->image)){
+            return redirect()->route('users.edit',Auth::id());
+        }
         $keyword = $request->input('keyword');
         if(!empty($keyword)){
             $events = Event::orderBy('date','asc')->where('date','>',Carbon::yesterday())->where('title', 'like', '%'.$keyword.'%')->orWhere('content','like', '%'.$keyword.'%')->orWhere('place','like', '%'.$keyword.'%')->paginate(5);
@@ -157,7 +160,11 @@ class EventController extends Controller
         if($event->user_id !== Auth::id()) {
             return abort(403);
         }
-        return view('events.edit', ['event' => $event]); 
+        $categories = Category::all();
+        return view('events.edit',[
+            'event' => $event,
+            'categories' => $categories,
+        ]);
     }
 
     /**
@@ -169,7 +176,7 @@ class EventController extends Controller
      */
     public function update(Request $request)
     {
-     
+  
         $event = Event::find($request->id);
         $event->title = $request->title;
         $event->content = $request->content;

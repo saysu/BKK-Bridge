@@ -10,7 +10,7 @@
 <div class="row">
 
     <div class="col-md-3">
-        <form class="form-inline mb-5 mt-5">
+        <form action="{{ route('events.index')}}" class="form-inline mb-5 mt-5">
             <label for="due_date-field" class="mb-1" >■開催日よりイベントを検索</label>
             <div style="overflow:hidden;">
                 <div class="form-group">
@@ -38,7 +38,7 @@
         <div>
             <hr>
             <label for="due_date-field">■キーワード検索</label>
-            <form class="form-inline">
+        <form action="{{ route('events.index')}}" class="form-inline">
                 <div class="form-group">
 
                     <input name="keyword" type="text" id="input-date" class="form-control" placeholder="タイトル、内容、場所" aria-label="Recipient's username" aria-describedby="button-addon2">

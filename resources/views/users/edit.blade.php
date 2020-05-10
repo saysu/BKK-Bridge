@@ -13,8 +13,13 @@
                         <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-right">
-                                <input type="file" class="form-control-file text-right" id="exampleFormControlFile1" name="image">
+                                <p>画像投稿は必須です</p>
+                                <label for="file_upload">
+                                    ファイルを選択して下さい
+                                    <input type="file" id="file_upload" name="image">
+                                    </label>
                             </div>
+
                         </div>
                     </div>
                     </div>

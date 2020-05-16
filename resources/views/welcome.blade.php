@@ -152,11 +152,9 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-6">
-                    <img src="/image/organizer.jpg" class="w-100" alt="">
-                </div>
+             
 
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5  order-md-last">
                     <h2 class="topside mt-3 font-weight-bold text-center"><span>イベントを企画してみよう！</span></h2>
                     <p class="mt-5">オーガナイザーとしていつでもイベント企画が可能！</p>
                     <p>飲み会、ビジネス交流会、趣味、スポーツ..など<br>
@@ -164,6 +162,11 @@
                       まずは新規登録し、マイページを作成してください。<br>
                     その後、「イベントを作る」のリンクより自由に作成してください!</p>
                 </div>
+
+                <div class="col-md-6">
+                    <img src="/image/organizer.jpg" class="w-100" alt="">
+                </div>
+
             </div>
         </div>
     </section>

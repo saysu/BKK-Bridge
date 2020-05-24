@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-12">
-                                    <input name="date" type="text" id="input-date">
+                                    <input name="date" type="date" id="input-date">
                                 </div>
                                 <div class="col-12">
                                     <div id="datetimepicker12"></div>

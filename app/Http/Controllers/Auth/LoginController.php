@@ -60,14 +60,13 @@ class LoginController extends Controller
     {
         try {
             $user = Socialite::driver('twitter')->user();
-            dd($user);
             $socialUser = User::firstOrCreate([
                 'token'    => $user->token,
             ], [
                 'token'    => $user->token,
                 'name'     => $user->name,
                 'email'    => $user->email,
-                'image'   => $user->avatar_original,
+                'image'   => $user->user['profile_image_url_https'],
                 'introduction'   => $user->user['description'],
             ]);
             Auth::login($socialUser, true);

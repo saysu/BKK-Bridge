@@ -50,7 +50,8 @@
 <div class="card">
 <img src="{{ $rankingEvent->image }}" class="card-img-top rankingpic" alt="...">
   <div class="card-body">
-    <p class="card-text">{{ $rankingEvent->title }}</p>
+  <a href="{{ route('events.show',$rankingEvent->id) }}"><p class="card-text">{{ $rankingEvent->title }}</p></a>
+    
   </div>
 </div>
 </div>

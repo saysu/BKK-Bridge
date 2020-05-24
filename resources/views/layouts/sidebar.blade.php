@@ -1,5 +1,5 @@
 
-<div class="col-md-3">
+<div class="col-md-3 mr-3">
   <form class="form-inline mb-5 mt-5">
       <label for="due_date-field" class="mb-1" >■開催日よりイベントを検索</label>
       <div style="overflow:hidden;">

@@ -29,14 +29,19 @@ class EventController extends Controller
  
     public function index(Request $request)
     {   
+
         if(empty(Auth::user()->image)){
             return redirect()->route('users.edit',Auth::id());
         }
+
+        $rankingEvents = Event::with('participates')->where('date','>',Carbon::yesterday())->withCount('participates')->orderBy('participates_count', 'desc')->take(3)->get();
+
         $keyword = $request->input('keyword');
         if(!empty($keyword)){
             $events = Event::orderBy('date','asc')->where('date','>',Carbon::yesterday())->where('title', 'like', '%'.$keyword.'%')->orWhere('content','like', '%'.$keyword.'%')->orWhere('place','like', '%'.$keyword.'%')->paginate(5);
             return view('events.index', [
                 'events' => $events,
+                'rankingEvents' => $rankingEvents,
             ]);
         }
 
@@ -52,26 +57,9 @@ class EventController extends Controller
 
             return view('events.index', [
                 'events' => $events,
+                'rankingEvents' => $rankingEvents,
             ]);
-        // dd($request);
 
-        // $q = \Request::query();
-
-        // if(isset($q['category_id'])) {
-        //     $events = Event::latest()->where('category_id', $q['category_id'])->paginate(5);
-        //     $events->load('category', 'user');
-
-        //     return view('events.index', [
-        //         'events' => $events,
-        //     ]);
-        // } else {
-        //     $events = Event::latest()->paginate(5);
-        //     $events->load('category', 'user');
-
-        //     return view('events.index', [
-        //         'events' => $events,
-        //     ]);
-        // }
     }
     
 

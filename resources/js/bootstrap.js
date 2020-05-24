@@ -51,7 +51,7 @@ require('tempusdominus-bootstrap-4');
 $(function () {
     $('#datetimepicker12').datetimepicker({
         format: "YYYY-MM-DD",
-        locale: 'ja',
+        locale: 'en',
         inline: true,
         sideBySide: true
     });

@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Socialite;
+use App\User;
 use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -35,5 +39,41 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    /**
+     * Twitterの認証ページヘユーザーをリダイレクト
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function redirectToProvider()
+    {
+        return Socialite::driver('twitter')->redirect();
+    }
+
+    /**
+     * Twitterからユーザー情報を取得
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function handleProviderCallback()
+    {
+        try {
+            $user = Socialite::driver('twitter')->user();
+            $socialUser = User::firstOrCreate([
+                'token'    => $user->token,
+            ], [
+                'token'    => $user->token,
+                'name'     => $user->name,
+                'email'    => $user->email,
+                'image'   => $user->avatar_original,
+                'introduction'   => $user->user['description'],
+            ]);
+            Auth::login($socialUser, true);
+        } catch (Exception $e) {
+            return redirect()->route('login');
+        }
+        
+        return redirect()->route('events.index');
     }
 }

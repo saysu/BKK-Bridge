@@ -65,6 +65,14 @@
                             </div>
                         </div>
                     </form>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <a href="{{ route('login.twitter')}}" class="btnfooter1 btn btn-primary btn-lg">Twitterでログイン</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

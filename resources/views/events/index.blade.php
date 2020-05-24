@@ -47,21 +47,58 @@
                 </div>
             </form>
         </div>
+{{-- 人気イベント --}}
+
+<div class="row">
+    <div class="col-md-12">
+        <?php $n = 1 ?>
+@foreach( $rankingEvents as $rankingEvent )
+<div class="row my-5">
+<p>{{ $n }}番人気のイベント</p>
+    <div class="card">
+    <img src="{{ $rankingEvent->image }}" class="card-img-top rankingpic" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{ $rankingEvent->title }}</p>
+        </div>
+      </div>
+</div>
+<?php $n++ ?>
+@endforeach
+
+    </div>
+</div>
+
     </div>
 
         {{-- nav col-9 --}}
         <div class="col-md-9">
+            <div class="row d-block d-md-none d-lg-none">
         <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="{{ route('events.index')}}">イベントに参加する</a>
+            <li class="nav-phone nav-item">
+                <a class="nav-link active" href="{{ route('events.index')}}">参加する</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('events.create') }}">イベントを作る</a>
+            <li class="nav-phone1 nav-item">
+                <a class="nav-link" href="{{ route('events.create') }}">作る</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-phone2 nav-item">
                 <a class="nav-link" href="{{ route('users.index', Auth::id()) }}">マイページ</a>
             </li>
         </ul>
+       </div>
+
+       <div class="row d-none d-md-block d-lg-block">
+        <ul class="nav nav-tabs">
+            <li class="nav-phone2 nav-item">
+                <a class="nav-link active" href="{{ route('events.index')}}">イベントに参加する</a>
+            </li>
+            <li class="nav-phone nav-item">
+                <a class="nav-link" href="{{ route('events.create') }}">イベントを作る</a>
+            </li>
+            <li class="nav-phone nav-item">
+                <a class="nav-link" href="{{ route('users.index', Auth::id()) }}">マイページ</a>
+            </li>
+        </ul>
+     </div>
 
 
         {{-- 各イベント投稿記事 --}}

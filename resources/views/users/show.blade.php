@@ -9,10 +9,10 @@
 
             <div class="col-md-12 text-center">
                 <div class="row">
-                    <div class="col-6 text-right mt-5">
+                    <div class="col-4 text-right mt-5">
                         <img src="{{ $user->image }}" class="icon" alt="">
                     </div>
-                    <div class="col-md-6 text-left font-weight-bold">
+                    <div class="col-md-8 text-left font-weight-bold">
                         <h3 class="registerinfo text-center"><span>プロフィール</span></h3>
                         <h5>名前: {{ $user->name }}</h5>
                         <hr>
@@ -31,7 +31,7 @@
 
 
                 @if($user->id === Auth::id())
-                <a href="{{ route('users.edit', $user) }}" type="submit" class="btn btn-bkk"
+                <a href="{{ route('users.edit', $user) }}" type="submit" class="btn btn-bkk mt-3"
                     id="{{ $user->user_id }}">登録情報を編集する</a>
                 @endif
     </form>

@@ -42,5 +42,7 @@ Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 // 質問集
 Route::get('/question', 'QuestionController@index')->name('question.index');
 
+Route::get('login/twitter', 'Auth\LoginController@redirectToProvider')->name('login.twitter');
+Route::get('login/twitter/callback', 'Auth\LoginController@handleProviderCallback');
 
 

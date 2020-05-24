@@ -176,7 +176,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        JD\Cloudder\CloudderServiceProvider::class
+        JD\Cloudder\CloudderServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class
 
     ],
 
@@ -231,6 +232,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
 
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
+        'Socialite' => Laravel\Socialite\SocialiteServiceProvider::class
 
     ],
 

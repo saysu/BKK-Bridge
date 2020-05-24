@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\User;
 use JD\Cloudder\Facades\Cloudder;
 use Auth;
+use App\Event;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -18,10 +20,9 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $rankingEvents = Event::with('participates')->where('date','>',Carbon::yesterday())->withCount('participates')->orderBy('participates_count', 'desc')->take(3)->get();
         $user->load('events', 'participates.event', 'keeps.event');
-      return view('users.index', ['user' => $user]);
-      
-
+      return view('users.index', ['user' => $user, 'rankingEvents'=>$rankingEvents]);
 
     }
 

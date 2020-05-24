@@ -71,8 +71,10 @@ class EventController extends Controller
     public function create()
     {
         $categories = Category::all();
+        $rankingEvents = Event::with('participates')->where('date','>',Carbon::yesterday())->withCount('participates')->orderBy('participates_count', 'desc')->take(3)->get();
         return view('events.create',[
             'categories' => $categories,
+            'rankingEvents' => $rankingEvents,
             ]);
     }
 

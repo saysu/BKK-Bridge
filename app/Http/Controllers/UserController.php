@@ -100,7 +100,7 @@ class UserController extends Controller
                     // 直前にアップロードした画像のユニークIDを取得します。
                     $publicId = Cloudder::getPublicId();
                     // URLを生成します
-                    $logoUrl = Cloudder::show($publicId, [
+                    $logoUrl = Cloudder::secureShow($publicId, [
                         'width'     => $width,
                         'height'    => $height
                     ]);

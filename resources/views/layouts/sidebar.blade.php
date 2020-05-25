@@ -46,7 +46,7 @@
   <?php $n = 1 ?>
 @foreach( $rankingEvents as $rankingEvent )
 <div class="row my-5">
-<p>{{ $n }}番人気のイベント</p>
+<p>今、{{ $n }}番人気のイベント</p>
 <div class="card">
 <img src="{{ $rankingEvent->image }}" class="card-img-top rankingpic" alt="...">
   <div class="card-body">

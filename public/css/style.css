@@ -1,115 +1,117 @@
 @charset "UTF-8";
 
 img {
-  object-fit: cover;
-  height: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 footer {
-  background-color: #ADD8E6;
+    background-color: #ADD8E6;
 }
 
 .btn-primary {
-   background-color: #ADD8E6;
-   border-color: #ADD8E6;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
 }
 
 .navbar {
-  background-color: #ADD8E6;
+    background-color: #ADD8E6;
 }
 
 .btn-cancel {
-  background-color: #FFE4B5;
-  border-color: #FFE4B5;
+    background-color: #FFE4B5;
+    border-color: #FFE4B5;
 }
 
 .btn-cancel:hover {
-  background-color: #F4A460	;
-  border-color: #F4A460	;
+    background-color: #F4A460;
+    border-color: #F4A460;
 }
 
 .btn-delete {
-  background-color: #FFE4B5;
-  border-color: #FFE4B5;
+    background-color: #FFE4B5;
+    border-color: #FFE4B5;
 }
 
 .btn-delete:hover {
-  background-color: #ADD8E6;
-  border-color: #ADD8E6;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
 }
 
 .btn-bkk {
-  background-color: #ADD8E6;
-   border-color: #ADD8E6;
-   color: white;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
+    color: white;
 }
 
 .btn-bkk1 {
-  background-color: #ADD8E6;
-   border-color: #ADD8E6;
-   color: white;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
+    color: white;
 }
 
 .btn-bkk1:hover {
-  background-color: #F5D1CA;
-  border-color: #F5D1CA;
-   color: white;
+    background-color: #F5D1CA;
+    border-color: #F5D1CA;
+    color: white;
 }
 
 .btn-bkk2 {
-  background-color: #ADD8E6;
-   border-color: #ADD8E6;
-   color: white;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
+    color: white;
 }
 
 .btn-bkk2:hover {
-  background-color: #F5D1CA;
-  border-color: #F5D1CA;
-  color: white;
+    background-color: #F5D1CA;
+    border-color: #F5D1CA;
+    color: white;
 }
 
 .btn-bkk:hover {
-  background-color: #87CEFA;
-  border-color: #87CEFA;
-  color: white;
+    background-color: #87CEFA;
+    border-color: #87CEFA;
+    color: white;
 }
 
 .icon {
-  height: 200px;
-  width: 210px;
-  border-radius: 50%;
+    height: 200px;
+    width: 210px;
+    border-radius: 50%;
 }
 
 .profilepic {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
 #page_top {
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
 }
+
 #page_top a {
-  background-color: #999;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 20px 20px;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
 }
 
 
 a {
-  color: black;
+    color: black;
 }
+
 a:hover {
-  color: #ADD8E6;
+    color: #ADD8E6;
 }
 
 .toppic {
-  height: 20px;
-  width: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -118,397 +120,513 @@ a:hover {
 }  */
 
 body {
-  background-color: white;
+    background-color: white;
 }
 
-.top1 {/*親div*/
-  position: relative;/*相対配置*/
-  }
+.top1 {
+    /*親div*/
+    position: relative;
+    /*相対配置*/
+}
 
 .top1 h1 {
-  position: absolute;/*絶対配置*/
-  color: white;/*文字は白に*/
-  font-weight: bold; /*太字に*/
-  font-size: 4.7em;/*サイズ2倍*/
-  font-family :Quicksand, sans-serif;/*Google Font*/
-  top: 27%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  }
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-weight: bold;
+    /*太字に*/
+    font-size: 4.7em;
+    /*サイズ2倍*/
+    font-family: Quicksand, sans-serif;
+    /*Google Font*/
+    top: 27%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-  .top1 p {
-    position: absolute;/*絶対配置*/
-    color: white;/*文字は白に*/
+.top1 p {
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
     font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     top: 51%;
     left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-    }
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-    .btn1 {
-      position: absolute;/*絶対配置*/
-      font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-      top: 73%;
-      left: 40%;
-      -ms-transform: translate(-50%,-50%);
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-      margin:0;
-      padding:0;
-      height: 30px;
-      width: 200px;
-      }
+.btn1 {
+    position: absolute;
+    /*絶対配置*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 73%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 200px;
+}
 
-      .btn1:hover {
-        color: white;
-        background-color: #ADD8E6;
-      }
+.btn1:hover {
+    color: white;
+    background-color: #ADD8E6;
+}
 
-    .btn2 {
-      position: absolute;/*絶対配置*/
-      font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-      top: 73%;
-      left: 60%;
-      -ms-transform: translate(-50%,-50%);
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-      margin:0;
-      padding:0;
-      height: 30px;
-      width: 200px;
-      }
+.btn2 {
+    position: absolute;
+    /*絶対配置*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 73%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 200px;
+}
 
-      .btn2:hover {
-        color: white;
-        background-color: #ADD8E6;
-      }
+.btn2:hover {
+    color: white;
+    background-color: #ADD8E6;
+}
 
-      .btnfooter {
-        font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-        /* margin-left: 50;
+.btnfooter {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    /* margin-left: 50;
         padding:0; */
-        text-align: center;
-        height: 45px;
-        width: 400px;
-        }
+    text-align: center;
+    height: 45px;
+    width: 400px;
+}
 
-      .btnfooter1 {
-        font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-        /* margin-left: 50;
+.btnfooter1 {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    /* margin-left: 50;
         padding:0; */
-        text-align: center;
-        height: 45px;
-        width: 300px;
-        }
+    text-align: center;
+    height: 45px;
+    width: 300px;
+}
 
-      .abouttop {/*親div*/
-        position: relative;/*相対配置*/
-        }
-     
-        .abouttop h1 {
-          background: linear-gradient(transparent 70%, #FFC0CB 70%);
-          position: absolute;/*絶対配置*/
-          color: white;/*文字は白に*/
-          font-weight: bold; 
-          font-size: 3em;/*サイズ2倍*/
-          font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-          top: 33%;
-          left: 50%;
-          -ms-transform: translate(-50%,-50%);
-          -webkit-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-          margin:0;
-          padding:0;
-          }
-          
-          .abouttop h2 {
-            background: linear-gradient(transparent 70%, #FFDAB9 70%);
-            position: absolute;/*絶対配置*/
-            color: white;/*文字は白に*/
-            font-weight: bold; 
-            font-size: 2em;/*サイズ2倍*/
-            font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-            top: 45%;
-            left: 19%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+.abouttop {
+    /*親div*/
+    position: relative;
+    /*相対配置*/
+}
 
-          .abouttop h3 {
-            background: linear-gradient(transparent 70%, #FFDAB9 70%);
-            position: absolute;/*絶対配置*/
-            color: white;/*文字は白に*/
-            font-weight: bold; 
-            font-size: 2em;/*サイズ2倍*/
-            font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-            top: 45%;
-            left: 81%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+.abouttop h1 {
+    background: linear-gradient(transparent 70%, #FFC0CB 70%);
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-weight: bold;
+    font-size: 3em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 33%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-          .abouttop h4 {
-            position: absolute;/*絶対配置*/
-            color: white;/*文字は白に*/
-            font-size: 1.5em;/*サイズ2倍*/
-            font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-            top: 60%;
-            left: 19%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+.abouttop h2 {
+    background: linear-gradient(transparent 70%, #FFDAB9 70%);
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-weight: bold;
+    font-size: 2em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 45%;
+    left: 19%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-          .abouttop h5 {
-            position: absolute;/*絶対配置*/
-            color: white;/*文字は白に*/
-            font-size: 1.5em;/*サイズ2倍*/
-            font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-            top: 60%;
-            left: 81%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+.abouttop h3 {
+    background: linear-gradient(transparent 70%, #FFDAB9 70%);
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-weight: bold;
+    font-size: 2em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 45%;
+    left: 81%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-          .abouttop p {
-            position: absolute;/*絶対配置*/
-            color: white;/*文字は白に*/
-            font-size: 2em;/*サイズ2倍*/
-            font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-            top: 55%;
-            left: 50%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+.abouttop h4 {
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-size: 1.5em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 60%;
+    left: 19%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-            .guide {
-              font-size: 30px;
-            }
+.abouttop h5 {
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-size: 1.5em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 60%;
+    left: 81%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-            .qa span {
-              font-size: 20px;
-              background: linear-gradient(transparent 70%, #ADD8E6 70%);
-            }
+.abouttop p {
+    position: absolute;
+    /*絶対配置*/
+    color: white;
+    /*文字は白に*/
+    font-size: 2em;
+    /*サイズ2倍*/
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
 
-            .btncontact {
-              font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-              margin:0;
-              padding:0;
-              height: 40px;
-              width: 200px;
-            }
+.guide {
+    font-size: 30px;
+}
 
-            .btncontact:hover {
-              color: white;
-              background-color: #ADD8E6;
-            }
+.qa span {
+    font-size: 20px;
+    background: linear-gradient(transparent 70%, #ADD8E6 70%);
+}
 
-            .toptitle {
-              font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-              font-size: 25px;
-            }
+.btncontact {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 200px;
+}
 
-            .dateinfo {
-              font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-              font-size: 20px;
-            }
+.btncontact:hover {
+    color: white;
+    background-color: #ADD8E6;
+}
 
-            .dateinfoicon {
-              width: 20px;
-            }
+.toptitle {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 25px;
+}
 
-            .placeinfo {
-              font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-              font-size: 17px;
-            }
+.dateinfo {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 20px;
+}
 
-            .placeinfopic {
-              width: 17px;
-            }
+.dateinfoicon {
+    width: 20px;
+}
 
-            .keepbtn1 {
-              width: 20px;
-            }
+.placeinfo {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 17px;
+}
 
-            .detailcontent span {
-              background: linear-gradient(transparent 70%, #ADD8E6 70%);
-            }
+.placeinfopic {
+    width: 17px;
+}
 
-            .card-title1 {
-              font-size: 15px;
-            }
+.keepbtn1 {
+    width: 20px;
+}
 
-            .flash1 {
-              background-color: #FFB6C1 !important;
-              color: white;
-              text-align: center;
-          } 
+.detailcontent span {
+    background: linear-gradient(transparent 70%, #ADD8E6 70%);
+}
 
-          .iconshow {
-            width: 20px;
-          }
+.card-title1 {
+    font-size: 15px;
+}
 
-          .card-titlebkk span {
-            background: linear-gradient(transparent 70%, #FFDAB9 70%);
-          }
+.flash1 {
+    background-color: #FFB6C1 !important;
+    color: white;
+    text-align: center;
+}
 
-          .registerinfo span {
-            background: linear-gradient(transparent 70%, #ADD8E6 70%);
-          }
-         
-          .iconusers {
-            width: 20px;
-          }
+.iconshow {
+    width: 20px;
+}
 
-       .roundedicon {
-         width: 100px;
-         height: 100px;
-       }
+.card-titlebkk span {
+    background: linear-gradient(transparent 70%, #FFDAB9 70%);
+}
 
-       .mypageline span {
-        background: linear-gradient(transparent 70%, #ADD8E6 70%);
-        font-size: 20px;
-       }
+.registerinfo span {
+    background: linear-gradient(transparent 70%, #ADD8E6 70%);
+}
 
-       .editinput {
-         font-size: 20px;
-       }
+.iconusers {
+    width: 20px;
+}
 
-       .topside span {
-        background: linear-gradient(transparent 70%, #FFB6C1 70%);
-       }
+.roundedicon {
+    width: 100px;
+    height: 100px;
+}
 
-       main {
-         min-height: 502px;
-       }
+.mypageline span {
+    background: linear-gradient(transparent 70%, #ADD8E6 70%);
+    font-size: 20px;
+}
 
-       .labeluser {
-        color: white; /* ラベルテキストの色を指定する */
-        font-size: 13px; /* ラベルテキストのサイズを指定する */
-        background-color: #ADD8E6;/* ラベルの背景色を指定する */
-        padding: 6px; /* ラベルとテキスト間の余白を指定する */
-        border-radius: 10px; /* ラベルボックスの角丸を指定する */
-        cursor:pointer; /* マウスカーソルの形を指定する */
-        }
+.editinput {
+    font-size: 20px;
+}
 
-        .labeluser:hover {
-          background-color: #FFB6C1;
-        }
+.topside span {
+    background: linear-gradient(transparent 70%, #FFB6C1 70%);
+}
 
-        .labeluser > input{
-        display:none; /* アップロードボタンのスタイルを無効にする */
-        }
+main {
+    min-height: 502px;
+}
 
-        .rankingpic {
-          height: 100px;
-          width: 100%;
-        }
+.labeluser {
+    color: white;
+    /* ラベルテキストの色を指定する */
+    font-size: 13px;
+    /* ラベルテキストのサイズを指定する */
+    background-color: #ADD8E6;
+    /* ラベルの背景色を指定する */
+    padding: 6px;
+    /* ラベルとテキスト間の余白を指定する */
+    border-radius: 10px;
+    /* ラベルボックスの角丸を指定する */
+    cursor: pointer;
+    /* マウスカーソルの形を指定する */
+}
+
+.labeluser:hover {
+    background-color: #FFB6C1;
+}
+
+.labeluser>input {
+    display: none;
+    /* アップロードボタンのスタイルを無効にする */
+}
+
+.rankingpic {
+    height: 100px;
+    width: 100%;
+}
 
 
 /* ---------------------- */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
-.top1 h1 {
-  font-size: 21px;
-  top: 22%;
+    .top1 h1 {
+        font-size: 21px;
+        top: 22%;
+    }
+
+    .top1 p {
+        font-size: 10px;
+        top: 58%;
+    }
+
+    .btn2 {
+        height: 16px;
+        width: 100px;
+        font-size: 10px;
+        left: 65%;
+        top: 91%;
+    }
+
+    .btn1 {
+        height: 16px;
+        width: 100px;
+        font-size: 10px;
+        top: 91%;
+        left: 35%;
+    }
+
+    .abouttop h1 {
+        font-size: 13px;
+        top: 41%;
+    }
+
+    .abouttop h2 {
+        font-size: 10px;
+        top: 49%;
+    }
+
+    .abouttop h3 {
+        font-size: 10px;
+        top: 49%;
+    }
+
+    .abouttop h4 {
+        font-size: 10px;
+        top: 67%;
+    }
+
+    .abouttop h5 {
+        font-size: 10px;
+        top: 70%;
+    }
+
+    .abouttop p {
+        font-size: 13px;
+        top: 62%;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .btnfooter {
+        width: 300px;
+    }
+
+    .nav-phone {
+        width: 95px;
+    }
+
+    .nav-phone1 {
+        width: 70px;
+    }
+
+    .nav-phone2 {
+        width: 120px;
+    }
+
 }
 
-.top1 p {
-  font-size: 10px;
-  top: 58%;
-}
+/* ------------- */
 
-.btn2 {
-  height: 16px;
-  width: 100px;
-  font-size: 10px;
-  left: 65%;
-  top: 91%;
-}
+@media screen and (max-width:1024px) {
+    .top1 h1 {
+        font-size: 35px;
+        top: 25%;
+    }
 
-.btn1 {
-  height: 16px;
-  width: 100px;
-  font-size: 10px;
-  top: 91%;
-  left: 35%;
-}
+    .top1 p {
+        font-size: 12px;
+        top: 58%;
+    }
 
-.abouttop h1
-{
-  font-size: 13px;
-  top: 41%;
-}
+    .btn2 {
+        height: 16px;
+        width: 100px;
+        font-size: 10px;
+        left: 60%;
+        top: 85%;
+    }
 
-.abouttop h2
-{
-  font-size: 10px;
-  top: 49%;
-}
+    .btn1 {
+        height: 16px;
+        width: 100px;
+        font-size: 10px;
+        top: 85%;
+        left: 40%;
+    }
 
-.abouttop h3
-{
-  font-size: 10px;
-  top: 49%;
-}
+    .abouttop h1 {
+        font-size: 17px;
+        top: 41%;
+    }
 
-.abouttop h4
-{
-  font-size: 10px;
-  top: 67%;
-}
+    .abouttop h2 {
+        font-size: 15px;
+        top: 49%;
+    }
 
-.abouttop h5
-{
-  font-size: 10px;
-  top: 70%;
-}
+    .abouttop h3 {
+        font-size: 15px;
+        top: 49%;
+    }
 
-.abouttop p
-{
-  font-size: 13px;
-  top: 62%;
-}
+    .abouttop h4 {
+        font-size: 12px;
+        top: 67%;
+    }
 
-h2, .h2 {
-  font-size: 1.5rem;
-}
+    .abouttop h5 {
+        font-size: 12px;
+        top: 67%;
+    }
 
-.btnfooter {
-  width: 300px;
-}
+    .abouttop p {
+        font-size: 15px;
+        top: 62%;
+    }
 
-.nav-phone {
-  width: 95px; 
-}
-.nav-phone1 {
-  width: 70px; 
-}
-.nav-phone2 {
-  width: 120px; 
-}
+    h2,
+    .h2 {
+        font-size: 1.5rem;
+    }
 
+    .btnfooter {
+        width: 300px;
+    }
+
+    .nav-phone {
+        width: 95px;
+    }
+
+    .nav-phone1 {
+        width: 70px;
+    }
+
+    .nav-phone2 {
+        width: 120px;
+    }
 }
